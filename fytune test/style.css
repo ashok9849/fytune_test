@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+
+html{
+    font-family:var(--body-font);
+    font-size:10px;
+    color:var(--body-font-color);
+    scroll-behavior:smooth; 
+}
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+img{
+    width:100%;
+    max-width:100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size:1.6rem;
+}
+.container{
+    width:100%;
+    max-width:122.5rem;
+    margin:0 auto;
+    padding:0 2.4rem;
+}
+
+.navbar-inverse{
+    background-color: #fff;
+    border-color:#fff;
+}
+.navbar-inverse .navbar-nav>li>a:visited {
+    color: #64697A;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: blue;
+}
+.navbar-inverse .navbar-toggle .icon-bar{
+    background-color: blue;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+    color: black;
+    background-color:white;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color: #FFF;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    padding:24px;
+    font-weight: bold;
+    
+}
+.navbar-toggle{
+    margin-top: 25px;
+    padding: 12px;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+    background-color: #fff;
+}
+.navbar-inverse{
+    
+    background: #fff;
+    box-shadow: 0px 13px 35px -12px rgba(35,35,35,0.15);
+    animation: menu_sticky 0.60s ease-in-out;
+}
+/* .Header{position: fixed !important;} */
+.sticky-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/* .section{margin-top:100px} */
+/* .section{margin-top:-20px} */
+.section p{
+    overflow:scroll;overflow-x:hidden;
+    font-size: 18px;
+    line-height: 31px;
+    color: #4c524d;
+    font-weight: bold;
+    margin:0 auto;
+    width:85%;
+}
+
+.banner_img{
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 82px;
+    /* margin-top: 75px; */
+    /* height:800px; */
+    opacity: 0.7;
+}
+.banner_text{
+    margin: 0 auto;
+    width: 85%;
+    margin-top:130px;
+    line-height: 40px;
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    
+}
+.clr_green{color:#3beb6a};
+
+.trusted-patner-text{width:70%;margin:0 auto}
+.fyntune_theme-title-one .main-title{
+    font-size: 48px;
+    line-height: 60px;
+    color: #233D63;
+    font-weight: 600;
+}
+.fyntune_theme-title-two .main-title-one{
+    font-size: 48px;
+    line-height: 60px;
+    color: #233D63;
+    font-weight: 600;
+}
+.fyntune_theme-title-three .main-title-two{
+    font-size: 48px;
+    line-height: 60px;
+    color: #233D63;
+    font-weight: 600;
+}
+.fa-check{color:green;padding-right: 10px;}
+.ban_heading{
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+    color:white;
+    padding:10px;
+}
+.ban_head{
+    background-color:#f5af4e;
+    margin:20px;
+}
+.ban_head_Btn{
+    text-align: center;
+    padding:15px;
+}
+.contact{
+    color:blue;
+    line-height: 38px;
+    font-size: 17px;
+}
+.footer{
+    padding-top: 60px;
+}
+.footer_data{
+    text-align: center;
+   
+}
+.footer_data h6{
+    color: #76797e;
+    line-height: 38px;
+    font-size: 17px;
+}
+.copy_right{
+    padding-top:30px;
+    padding-bottom:30px;
+    margin:0 auto;
+    width:90%;
+}
+.copy_right h6{
+    font-size:16px;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+
+ /* @media only screen and (max-width: 900px) {
+     .navbar-nav{
+         float:right !important;
+         margin:0;
+     }
+ } */
+
+ @media screen  and (max-width: 1400px)  {
+.navbar-nav {
+    float: left ;
+    margin: 0;
+   }  
+   .section button{
+    width: 150px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+    box-shadow: 0px 10px 40px 0px rgba(150,57,57,0.25);
+    background: linear-gradient( -135deg, rgb(133,194,252) 0%, rgb(1,130,255) 100%);
+    margin-left: 80px;
+    margin-top: 40px;
+    }
+    .section p{font-size:20px}
+    .banner_img{height:400px}
+    .trusted-patner {
+        margin-top:100px;
+        text-align: center;
+        font-size: 30px;
+        color: #878787;
+        text-transform: uppercase;
+        padding-bottom: 0px;
+    }
+    .artical_text_heading{font-size:20px}
+    .title{margin:40px;    font-size: 25px;}
+    .article {
+        float:left;
+        width:50%;
+        padding:40px;
+    }
+    .article_two {
+        float:left;
+        width:51%;
+        padding:40px;
+    }
+    .article_three {
+        float:left;
+        width:51%;
+        padding:40px;
+    }
+    .article_img{
+        width: 50%;
+        float: left;
+        padding: 40px;
+        margin-top:70px;
+    }
+    .artical_team_img-two{
+        width: 47%;
+        float: left;
+        padding: 40px;
+        margin-top:100px;
+    }
+    .artical_team_img{
+        width:420px;
+    }
+    .artical_team_img-three{
+        width: 47%;
+        float: left;
+        padding: 40px;
+        margin-top:65px;
+    }
+    /* .artical_team_img{
+        margin-top:60px;
+    } */
+    #benefitz{margin-top:-40px}
+    #fynix{margin-top:-40px}
+    #posp{margin-top:-40px}
+    .footer_data{width:23%;float:left}
+ }
+ @media screen and (max-width: 650px) {
+    .banner_text {
+        margin-top: 150px;
+        line-height: 30px;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .fyntune_theme-title-one .main-title{
+        font-size: 30px;
+    }
+    .fyntune_theme-title-two .main-title-one{
+        font-size: 35px;
+    }
+    .fyntune_theme-title-three .main-title-two{
+        font-size: 30px;
+    }
+    .ban_heading{font-size:20px}
+    .footer_data h2{
+        font-size:25px;
+    }
+    .section p{
+        font-weight: bold;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 0px;
+        line-height: 22px;
+        font-size: 16px;
+
+    }
+    .section button{
+        width: 150px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 3px;
+        color: #fff;
+        box-shadow: 0px 10px 40px 0px rgba(150,57,57,0.25);
+        background: linear-gradient( -135deg, rgb(133,194,252) 0%, rgb(1,130,255) 100%);
+        margin-left: 40px;
+        margin-top:15px;
+    }
+    .banner_img{
+        height: 400px;
+    }
+    .title{margin:40px;font-size: 19px;}
+    .section{margin-top:0px}
+    .artical_text_heading{font-size:18px;line-height: 26px;}
+    .article {
+        float:left;
+        width:100%;
+        margin-top: -40px;
+        
+    }
+    .article_two {
+        float:left;
+        width:100%;
+        margin-top:-40px;
+    }
+    .article_three {
+        float:left;
+        width:100%;
+        margin-top:-40px;
+    }
+    .article_img{
+        width: 100%;
+        float: left;
+        margin-top: -40px;
+    }
+    .artical_team_img-two{
+        width: 100%;
+        float: left;
+        margin-top:-40px
+    }
+    .artical_team_img-three{
+        width: 100%;
+        float: left;
+        margin-top:-40px
+    }
+    .footer_data{width:100%}
+
+
+ }
